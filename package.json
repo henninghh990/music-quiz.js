@@ -1,0 +1,15 @@
+{
+  "name": "music-sound-quiz",
+  "version": "1.0.0",
+  "description": "A JavaScript component made with React for creating music quiz based any sound or song provided.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "music-quiz.js"
+  },
+  "author": "Henning H. Haugen",
+  "license": "ISC"
+}
