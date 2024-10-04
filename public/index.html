@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Web Component</title>
+</head>
+<body>
+  <div id="music-quiz"></div>
+
+  <script src="dist/bundle.js"></script>  <!-- Last inn bundlen fra Webpack -->
+
+  <script>
+    // Bruk MusicQuiz-elementet i vanilla JavaScript
+    const options = {
+      title: 'Great music quiz',
+      questions: [
+        { question: 'Who is the artist?', answer: 'Adele' },
+        { question: 'Which movie is this from?', answer: 'Interstellar' },
+      ],
+      style: 'slider'
+    };
+
+    // Instansier komponenten med parametere i konstruktøren
+    document.addEventListener('DOMContentLoaded', () => {
+      const quizElement = new MusicQuiz(document.getElementById('music-quiz'), options);
+    });
+  </script>
+</body>
+</html>
